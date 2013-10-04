@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131004021818) do
+ActiveRecord::Schema.define(version: 20131004030944) do
 
   create_table "victims", force: true do |t|
     t.string   "name"
@@ -21,5 +21,7 @@ ActiveRecord::Schema.define(version: 20131004021818) do
     t.datetime "updated_at"
     t.string   "story_url"
   end
+
+  add_index "victims", ["name"], name: "index_victims_on_name"
 
 end
