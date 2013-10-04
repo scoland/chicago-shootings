@@ -1,6 +1,17 @@
 <h3>Chicago Shooting Deaths</h3>
-<ul>
+<table class="table">
+
+	<tr>
+		<th>Name</th>
+		<th>Age</th>
+		<th>Date</th>
+	</tr>
+
 <% @victims.each do |victim| %>
-	<li>Name: <%= victim.name %> Date: <%= victim.date %> Age: <%= victim.age %></li>
+	<tr>
+		<td><%= victim.name %></td>
+		<td><%= victim.age %></td>
+		<td><%= victim.date %></td>
+	</tr>
 <% end %>
-</ul>
+</table>
