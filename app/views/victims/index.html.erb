@@ -13,7 +13,7 @@
 
 		<% for victim in victims %>
 			<tr>
-				<td><%= victim.name %></td>
+				<td><%= link_to victim.name, victim.story_url %></td>
 				<td><%= victim.age %></td>
 				<td><%= victim.date %></td>
 			</tr>

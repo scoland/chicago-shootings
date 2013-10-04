@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131003181250) do
+ActiveRecord::Schema.define(version: 20131004021818) do
 
   create_table "victims", force: true do |t|
     t.string   "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20131003181250) do
     t.date     "date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "story_url"
   end
 
 end
