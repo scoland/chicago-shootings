@@ -5,7 +5,9 @@ namespace :import_victims_csv do
     csv = CSV.parse(csv_text, :headers => true)
     csv.each do |row|
     	formatted_date = Date.strptime row[1], '%m/%d/%Y'
-    	Victim.create!(date: formatted_date, age: row[5], name: row[8]) 
+    	if row[9] == 'Gunshot'
+    		Victim.create!(date: formatted_date, age: row[5], name: row[8])
+    	end
     end
   end
 end
