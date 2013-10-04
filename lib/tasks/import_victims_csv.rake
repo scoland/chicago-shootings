@@ -1,4 +1,6 @@
 require 'csv'
+require 'mechanize'
+
 namespace :import_victims_csv do
   task :create_victims => :environment do
     csv_text = File.read('public/seed_data/2013all.csv')
@@ -10,5 +12,11 @@ namespace :import_victims_csv do
     		new_victim.update_attributes(date: formatted_date, age: row[5], name: row[8], story_url: row[10])
     	end
     end
+  end
+
+  task :download_csv => :environment do
+  	agent = Mechanize.new
+  	agent.pluggable_parser.default = Mechanize::Download
+  	agent.get('http://spreadsheets.google.com/pub?key=0Ak3IIavLYTovdHYxbDItQ255eWh1NzBiQXp5cmxRdmc&output=csv').save('public/seed_data/2013all.csv')
   end
 end
