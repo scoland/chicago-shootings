@@ -1,17 +1,23 @@
 <h1>Chicago Shooting Deaths: <%= @victims.count %></h1>
-<table class="table">
 
-	<tr>
-		<th>Name</th>
-		<th>Age</th>
-		<th>Date</th>
-	</tr>
 
-<% @victims.each do |victim| %>
-	<tr>
-		<td><%= victim.name %></td>
-		<td><%= victim.age %></td>
-		<td><%= victim.date %></td>
-	</tr>
+<% @victim_days.each do |day, victims| %>
+<h2></h2>
+	<table class="table">
+		<h2><%= day.strftime("%B %d, %Y") %></h2>
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Date</th>
+		</tr>
+
+		<% for victim in victims %>
+			<tr>
+				<td><%= victim.name %></td>
+				<td><%= victim.age %></td>
+				<td><%= victim.date %></td>
+			</tr>
+		<% end %>
+
+	</table>
 <% end %>
-</table>
