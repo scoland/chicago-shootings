@@ -9,7 +9,15 @@
 	</div>
 		<ul class="victims-list">
 			<% for victim in victims %>
-					<li><%= link_to victim.name, victim.story_url %> <span><%= victim.age %></span></li>
+					<li>
+						<% if victim.story_url.present? %>
+							<%= link_to victim.name, victim.story_url %>
+						<% else %>
+							<%= victim.name %>
+						<% end %>
+						
+						<span class='age'><%= victim.age %></span>
+					</li>
 			<% end %>
 		</ul>
 
