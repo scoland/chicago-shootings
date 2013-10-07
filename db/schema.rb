@@ -22,6 +22,6 @@ ActiveRecord::Schema.define(version: 20131004030944) do
     t.string   "story_url"
   end
 
-  add_index "victims", ["name"], name: "index_victims_on_name"
+  add_index "victims", ["name"], name: "index_victims_on_name", using: :btree
 
 end
