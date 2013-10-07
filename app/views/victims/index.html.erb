@@ -11,12 +11,14 @@
 			<% for victim in victims %>
 					<li>
 						<% if victim.story_url.present? %>
-							<%= link_to victim.name, victim.story_url %>
+							<%= link_to(victim.story_url) do %>
+								<%= victim.name %> <span><%= victim.age %></span>
+							<% end %>
+
 						<% else %>
-							<%= victim.name %>
+							<%= victim.name %> <span><%= victim.age %></span>
 						<% end %>
-						
-						<span class='age'><%= victim.age %></span>
+
 					</li>
 			<% end %>
 		</ul>
