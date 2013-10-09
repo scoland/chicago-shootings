@@ -8,7 +8,7 @@
 
 /* Sass variables */
 
-$gray: #959595;
+$gray: rgb(100, 100, 100);
 
 
 /* ==========================================================================
@@ -121,6 +121,8 @@ body { background-color: black;}
     color: white;
     font-size: 3em;
     width: 48.71794%;
+    margin-top: 1.7em;
+    line-height: 1;
 }
 
 .hero-number  {
@@ -128,12 +130,16 @@ body { background-color: black;}
     margin: 0 auto;
     width: 1.7em;
     color: $gray;
+    margin-top: .7em;
+    margin-bottom: .7em;
 }
 
 .date-header {
     overflow: hidden;
     border-top: 1px solid $gray;
     border-bottom: 1px solid $gray;
+    margin-top: .7em;
+    margin-bottom: .7em;
 }
 
 .date-header h3, .date-header h4  {
@@ -141,6 +147,7 @@ body { background-color: black;}
     display: inline;
     margin-top: .3em;
     margin-bottom: .3em;
+    color: $gray;
 }
 
     .date-header h3 {
@@ -161,6 +168,7 @@ body { background-color: black;}
     margin-top: .5em;
     margin-bottom: .5em;
     padding-left: 0;
+    line-height: 1;
 }
 
     .victims-list li span {
