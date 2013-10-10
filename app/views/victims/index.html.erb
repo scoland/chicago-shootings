@@ -4,7 +4,11 @@
 <% @victim_days.each do |day, victims| %>
 	<div class="date-header">
 		<h3><%= day.strftime("%B %d, %Y") %></h3>
+		<%= render :partial => "twitter", :locals => { :victims => victims } %>
 		<h4><%= victims.count %></h4>
+
+
+
 
 	</div>
 		<ul class="victims-list">

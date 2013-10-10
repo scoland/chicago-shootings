@@ -1,0 +1,8 @@
+		<% victim_link = "" %>
+		<% for victim in victims %>
+			<% victim_link += victim.name + " " %>
+		<% end %>
+
+		<% victim_link = url_encode(victim_link) %>
+
+		<%= link_to "Twitter", "https://twitter.com/share?text=" + victim_link, {class: 'twitter-link', target: '_blank'} %>
