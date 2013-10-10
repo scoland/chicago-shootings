@@ -5,4 +5,4 @@
 
 		<% victim_link = url_encode(victim_link.chomp(', ')) %>
 
-		<%= link_to "Twitter", "https://twitter.com/share?text=" + victim_link, {class: 'twitter-link', target: '_blank'} %>
+		<%= link_to "Twitter", "https://twitter.com/share?url=/&text=" + victim_link, {class: 'twitter-link', target: '_blank'} %>
