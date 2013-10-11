@@ -16,9 +16,8 @@ $gray: rgb(100, 100, 100);
    ========================================================================== */
 
 body {
-    font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", 
-    "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; 
-    font-weight:600; 
+    font-family: Open Sans, FreeSans, "Nimbus Sans L", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 700; 
     font-stretch:normal;
     color: white;
 }
@@ -121,6 +120,7 @@ textarea {
 
 body { background-color: black;}
 
+
 .container { 
     max-width: 1200px;
     margin: 0 auto;
@@ -178,6 +178,7 @@ body { background-color: black;}
     margin-bottom: .5em;
     padding-left: 0;
     line-height: 1;
+
 }
 
     .victims-list li span {
@@ -192,7 +193,7 @@ body { background-color: black;}
         color: white;
     }
 
-        .victims-list li:hover a {
+        .victims-list a:hover {
             color: $gray;
         }
 
