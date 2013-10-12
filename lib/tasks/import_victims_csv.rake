@@ -33,7 +33,7 @@ namespace :import_victims_csv do
 	    		Twitter.update("#{row[8]} #{row[5]} #{row[10]}")
 	    	end
 
-    	
+    		# Finally, update or fill in the row with new info
     		new_victim.update_attributes(date: formatted_date, age: row[5], name: row[8], story_url: row[10])
     	end
 
