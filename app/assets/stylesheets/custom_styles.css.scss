@@ -351,6 +351,14 @@ body { background-color: black;}
 
 @media only screen and (max-width: 650px) {
 
+    .date-header h3, .date-header h4, .victims-list, .hero {
+        font-size: 1.5em;
+    }
+
+    .hero-number {
+        font-size: 6em;
+    }
+
     .date-header h4 { 
         margin-right: 5%;
     }
