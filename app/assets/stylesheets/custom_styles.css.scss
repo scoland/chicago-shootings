@@ -334,6 +334,18 @@ body { background-color: black;}
     .hero-number {
         font-size: 8em;
     }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .date-header h3, .date-header h4, .victims-list, .hero {
+        font-size: 2em;
+    }
+
+    .hero-number {
+        font-size: 7em;
+    }
     
 }
 
