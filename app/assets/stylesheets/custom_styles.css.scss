@@ -200,15 +200,22 @@ body { background-color: black;}
 
 /* Twitter */
 .twitter-link {
-    background-image: image-url("twitter-icon.png");
-    width: 80px;
-    height: 80px;
+    background-image: image-url("bird-sprite.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
     display: block;
     text-indent: -9999px;
     float: right;
     margin-right: 5%;
     position: relative;
-    top: .5em;
+    top: 1.85em;
+    width: 46px;
+    height: 37px;
+    background-position: -52px 0;
+
+    &:hover {
+        background-position: -1px -5px;
+    }
 }
 
 
@@ -335,6 +342,16 @@ body { background-color: black;}
         font-size: 8em;
     }
 
+    .twitter-link {
+        background-position: -95px -50px;
+        width: 38px;
+        height: 31px;
+        top: 1.55em;
+
+        &:hover {
+            background-position: -4px -51px;
+        }
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -345,6 +362,17 @@ body { background-color: black;}
 
     .hero-number {
         font-size: 7em;
+    }
+
+    .twitter-link {
+        background-position: -105px -1px;
+        width: 30px;
+        height: 25px;
+        top: 1.2em;
+
+        &:hover {
+            background-position: -54px -54px;
+        }
     }
     
 }
