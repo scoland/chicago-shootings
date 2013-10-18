@@ -1,4 +1,5 @@
 ChicagoShooting::Application.routes.draw do
+  get "disclaimer", to: 'static#disclaimer'
   root to: 'victims#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

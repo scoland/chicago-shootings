@@ -218,6 +218,67 @@ body { background-color: black;}
     }
 }
 
+/* ===============
+
+Disclaimer page 
+
+==================*/
+.static {
+        background-color: white;
+        color: black;
+
+        .hero {
+            color: black;
+            margin-bottom: 3em;
+        }
+
+        //Opacity hack because chrome defaults to transparent selections
+        ::selection {
+            background:rgba(0, 0, 0, 0.99);
+            color: white;
+            }
+        ::-moz-selection {
+            background:rgba(0, 0, 0, 0.99);
+            color: white;
+        }
+}
+
+.disclaimer {
+    margin-bottom: 6em;
+}
+
+    .disclaimer-header {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    .disclaimer p {
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.3;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-bottom: .7em;
+    }
+
+    .disclaimer p a {
+        color: black;
+    }
+
+.contact-email {
+    color: $gray;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #959595;
+}
+
+.twitter-link-disclaimer {
+    float: right;
+}
+
+
 
 /* ==========================================================================
    Helper classes
@@ -334,7 +395,7 @@ body { background-color: black;}
 
 @media only screen and (max-width: 1000px) {
 
-    .date-header h3, .date-header h4, .victims-list, .hero {
+    .date-header h3, .date-header h4, .victims-list, .hero, .disclaimer-header {
         font-size: 2.5em;
     }
 
@@ -356,12 +417,16 @@ body { background-color: black;}
 
 @media only screen and (max-width: 800px) {
 
-    .date-header h3, .date-header h4, .victims-list, .hero {
+    .date-header h3, .date-header h4, .victims-list, .hero, .disclaimer-header {
         font-size: 2em;
     }
 
     .hero-number {
         font-size: 7em;
+    }
+
+    .disclaimer p {
+        font-size: 1.25em;
     }
 
     .twitter-link {
@@ -383,8 +448,16 @@ body { background-color: black;}
         margin-top: 1em;
     }
 
-    .date-header h3, .date-header h4, .victims-list, .hero {
+    .date-header h3, .date-header h4, .victims-list, .hero, .disclaimer-header {
         font-size: 1.5em;
+    }
+
+    .disclaimer p {
+        font-size: 1em;
+    }
+
+    .contact-email {
+        font-size: 1em;
     }
 
     .hero-number {
