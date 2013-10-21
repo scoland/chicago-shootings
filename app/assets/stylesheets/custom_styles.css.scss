@@ -108,6 +108,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 //Opacity hack because chrome defaults to transparent selections
 ::selection {
     background:rgba(255, 255, 255, 0.99);
@@ -132,6 +133,12 @@ body { background-color: black;}
     width: 48.71794%;
     margin-top: 1.7em;
     line-height: 1;
+}
+
+.menu-link {
+    float: right;
+    position: relative;
+    top: .4em;
 }
 
 .hero-number  {
@@ -168,7 +175,6 @@ body { background-color: black;}
         float: right;
         margin-right: 15%;
     }
-
 
 
 .victims-list {
@@ -241,6 +247,12 @@ Disclaimer page
             background:rgba(0, 0, 0, 0.99);
             color: white;
         }
+}
+
+.x-link {
+    float: right;
+    position: relative;
+    top: .4em;
 }
 
 .disclaimer {
