@@ -30,7 +30,7 @@ namespace :import_victims_csv do
 
 	    	# Test to see if the name was initialized, if so it's a new victim and should be tweeted
 	    	if (new_victim.id.blank?)
-	    		Twitter.update("#{row[8]} #{row[5]} #{row[10]}")
+	    		Twitter.update("#{row[8]} #{row[5]} #{row[10]}" + ' #chicagopointblank')
 	    	end
 
     		# Finally, update or fill in the row with new info
