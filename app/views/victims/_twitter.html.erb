@@ -3,6 +3,7 @@
 			<% victim_link += "#{victim.name} #{victim.age}, " %>
 		<% end %>
 
-		<% victim_link = url_encode(victim_link.chomp(', ')) %>
+		<% victim_link = victim_link.chomp(', ') +  ' #chicagopointblank' %>
+		<% victim_link = url_encode(victim_link) %>
 
 		<%= link_to "Twitter", "https://twitter.com/share?url=/&text=" + victim_link, {class: 'twitter-link', target: '_blank'} %>
