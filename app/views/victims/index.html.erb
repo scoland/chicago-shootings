@@ -1,6 +1,6 @@
-<%= link_to image_tag("menu.png"), disclaimer_path, class: "menu-link" %>
+<%= link_to image_tag("menu.png"), info_path, class: "menu-link" %>
 
-<h1 class="hero">How many people have been shot & killed in Chicago?</h1>
+<h1 class="hero">How many shot & killed in Chicago this year?</h1>
 
 <h2 class="hero-number"><%= @victims.count %></h2>
 
@@ -9,8 +9,6 @@
 		<h3><%= day.strftime("%B %d, %Y") %></h3>
 		<%= render :partial => "twitter", :locals => { :victims => victims } %>
 		<h4><%= victims.count %></h4>
-
-
 
 
 	</div>
