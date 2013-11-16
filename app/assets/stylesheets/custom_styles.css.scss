@@ -260,21 +260,31 @@ Disclaimer page
     margin-bottom: 6em;
 }
 
-    .disclaimer-header {
+    .disclaimer-header, .mission-header {
         font-size: 3em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .mission-header {
+        border-top: 1px solid black;
+        padding-top: .2em;
+    }
+
+    .mission-text {
         margin-bottom: 0;
     }
 
     .disclaimer p {
-        margin-top: .4em;
+        margin-top: .5em;
         font-weight: 400;
         font-size: 1.5em;
         line-height: 1.3;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        margin-bottom: .7em;
+        padding-top: .8em;
+        padding-bottom: .8em;
+        margin-bottom: .4em;
     }
 
     .disclaimer p a {
@@ -415,7 +425,7 @@ Disclaimer page
 
 @media only screen and (max-width: 1000px) {
 
-    .date-header h3, .date-header h4, .victims-list, .hero, .disclaimer-header {
+    .date-header h3, .date-header h4, .victims-list, .hero, .disclaimer-header, .mission-header {
         font-size: 2.5em;
     }
 
@@ -437,7 +447,7 @@ Disclaimer page
 
 @media only screen and (max-width: 800px) {
 
-    .date-header h3, .date-header h4, .victims-list, .hero, .disclaimer-header {
+    .date-header h3, .date-header h4, .victims-list, .hero, .disclaimer-header, .mission-header {
         font-size: 2em;
     }
 
@@ -468,7 +478,7 @@ Disclaimer page
         margin-top: .5em;
     }
 
-    .date-header h3, .date-header h4, .victims-list, .hero, .disclaimer-header {
+    .date-header h3, .date-header h4, .victims-list, .hero, .disclaimer-header, .mission-header {
         font-size: 1.5em;
     }
 
@@ -495,6 +505,16 @@ Disclaimer page
     .container {
         max-width: 95%;
     }
+
+    #twitter-widget-0 {
+        float: left;
+        clear: both;
+    }
+
+    .contact-email {
+        float: left;
+    }
+
 }
 
 @media print,
