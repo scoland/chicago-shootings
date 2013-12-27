@@ -7,11 +7,11 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= csrf_meta_tags %>
+  <%= render 'layouts/footer' %>
 </head>
 <body class="<%= "#{controller.controller_name}"%>">
 	<div class="container">
 		<%= yield %>
 	</div>
-	<%= render 'layouts/footer' %>
 </body>
 </html>
