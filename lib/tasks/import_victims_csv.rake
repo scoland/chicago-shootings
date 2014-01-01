@@ -14,7 +14,7 @@ namespace :import_victims_csv do
   	agent.pluggable_parser.default = Mechanize::Download
   	agent.get('http://spreadsheets.google.com/pub?key=0Ak3IIavLYTovdHYxbDItQ255eWh1NzBiQXp5cmxRdmc&output=csv').save('public/seed_data/2013all.csv')
 
-    csv_text = File.read('public/seed_data/2013all.csv')
+    csv_text = File.read('public/seed_data/2014all.csv')
     csv = CSV.parse(csv_text, :headers => true)
 
     csv.each do |row|
