@@ -12,7 +12,7 @@ namespace :import_victims_csv do
   	# Use Mechanize to download the new csv from the red eye google spreadsheet
   	agent = Mechanize.new
   	agent.pluggable_parser.default = Mechanize::Download
-  	agent.get('http://spreadsheets.google.com/pub?key=0Ak3IIavLYTovdHYxbDItQ255eWh1NzBiQXp5cmxRdmc&output=csv').save('public/seed_data/2013all.csv')
+  	agent.get('http://spreadsheets.google.com/pub?key=0Ak3IIavLYTovdGhfeHY5VmhGaXVOVmNiWlpPdWRfWUE&output=csv').save('public/seed_data/2014all.csv')
 
     csv_text = File.read('public/seed_data/2014all.csv')
     csv = CSV.parse(csv_text, :headers => true)
